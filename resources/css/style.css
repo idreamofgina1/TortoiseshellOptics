@@ -99,6 +99,7 @@ footer span {
 
 .banner {
   justify-content: flex-end;
+  margin-right: 2rem;
 }
 
 .banner h1 {
@@ -143,4 +144,105 @@ footer span {
   padding-bottom: .5rem;
   padding-left: 1.25rem;
   margin-bottom: 1rem;
+}
+
+
+@media only screen and (min-width: 700px) {
+  nav {
+    display: flex;
+  }
+  .truncated_menu {
+    display: none;
+  }
+  .fullmenu {
+    align-items: flex-end;
+    text-align: right;
+    justify-content: flex-end;
+  }
+  .container {
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .logow {
+    justify-content: flex-start;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+
+@media only screen and (max-width: 1024px) {
+  #container {
+      max-width: 100%;
+  }
+  header {
+    height: 22rem;
+  }
+  #movebanner {
+    margin-top: 5rem;
+    margin-right: 2rem;
+  }
+  .banner h1{
+    padding: .75rem 4rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .fullmenu {
+    display: none;
+  }
+  #container {
+    max-width: 100%;
+  }
+  header {
+    height: 17 rem;
+    background-position: 20%;
+  }
+  #movebanner {
+    margin-top: 2rem;
+    justify-content: center;
+    margin-right: 0px;
+  }
+  .banner {
+    width: 100%;
+    margin: 0px;
+  }
+  .banner h1 {
+    font-size: 1rem;
+    padding: 1rem 0px;
+    text-align: center;
+  }
+  #about {
+    display: block;
+    margin: 3.77rem 0px;
+    justify-content: center;
+  }
+  .about {
+    margin-bottom: 1.54rem;
+    justify-content: center;
+  }
+  .about span {
+    font-size: 0.77rem;
+    justify-content: center;
+  }
+  #boxes {
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+  .box h2 {
+    text-align: center;
+    padding-bottom: 1 rem;
+    width: 100%;
+  }
+  .box span {
+    font-size: 0.77rem;
+    padding-bottom: 4rem;
+    width: 100%;
+  }
+  footer span {
+    display: none;
+    justify-content: center;
+  }
 }
