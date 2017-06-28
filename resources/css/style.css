@@ -43,7 +43,27 @@ ul li {
 
 nav {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+}
 
+footer {
+padding-left: 4rem;
+padding-top: 4rem;
+padding-bottom: 4rem;
+padding-right: 1rem;
+display: flex;
+align-items: center;
+background-color: azure;
+}
+
+footer img {
+  height: 1.5rem;
+}
+
+footer span {
+  padding-left: 1rem;
 }
 
 #container {
@@ -52,26 +72,29 @@ nav {
   background-color: cadetblue;
   margin: auto;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 0px;
+  display: flex;
 }
-
 
 #about {
   display: flex;
+  justify-content: center;
+}
+
+#boxes {
+  display: flex;
+  justify-content: center;
+}
+
+#movebanner {
+  display: flex;
+  justify-content: flex-end;
 }
 
 .logow {
   height: 1.5rem;
   margin-left: 2rem;
   margin-right: 1rem;
-}
-
-header .flexcontain {
-  justify-content: flex-end;
-}
-
-header .banner {
-  justify-content: flex-end;
 }
 
 .banner {
@@ -90,14 +113,34 @@ header .banner {
 }
 
 .about {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  text-align: center;
   height: 8rem;
   width: 5rem;
-  justify-content: center;
-  text-align: center;
-  margin: 3rem 0px;
+  margin: 3rem;
 }
 
 .about img {
   width: 3.5rem;
+}
+
+.box {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.box h2{
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  background-color: cadetblue;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
 }
