@@ -51,7 +51,10 @@ nav {
   top: 1rem;
   background-color: cadetblue;
   margin: auto;
+  align-items: center;
+  padding: 1rem;
 }
+
 
 #about {
   display: flex;
@@ -64,6 +67,14 @@ nav {
 }
 
 header .flexcontain {
+  justify-content: flex-end;
+}
+
+header .banner {
+  justify-content: flex-end;
+}
+
+.banner {
   justify-content: flex-end;
 }
 
