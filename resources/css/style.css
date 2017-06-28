@@ -1,7 +1,6 @@
 body {
   font-family: "Helvetica", sans-serif;
   line-height: 1.4;
-  display: flex;
 }
 
 html {
@@ -14,12 +13,15 @@ header {
   background-repeat: no-repeat;
   background-position: center;
   height: 30rem;
+  background-size: cover;
 }
 
 header img {
-  left: 2rem;
+  margin-left: 2rem;
   height: 1.5rem;
-  right: 1rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 header span {
@@ -28,14 +30,20 @@ header span {
 
 ul {
   list-style: none;
+  text-align: right;
 }
 
 ul li {
-  display: inline;
+  display: inline-block;
   padding: 1rem 2rem;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: flex-end;
   text-align: right;
+}
+
+nav {
+  display: flex;
+
 }
 
 #container {
@@ -43,6 +51,20 @@ ul li {
   top: 1rem;
   background-color: cadetblue;
   margin: auto;
+}
+
+#about {
+  display: flex;
+}
+
+.logow {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+header .flexcontain {
+  justify-content: flex-end;
 }
 
 .banner h1 {
@@ -54,4 +76,17 @@ ul li {
   line-height: 1.2;
   margin-top: 10rem;
   max-width: 25rem;
+}
+
+.about {
+  display: inline-block;
+  height: 8rem;
+  width: 5rem;
+  justify-content: center;
+  text-align: center;
+  margin: 3rem 0px;
+}
+
+.about img {
+  width: 3.5rem;
 }
